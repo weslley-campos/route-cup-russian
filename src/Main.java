@@ -51,21 +51,21 @@ public class Main {
         // exemplo para inserção
         // Paulo vitor
         main.addNodeValue(Kaliningrado, São_Petersburgo, new NodeValue(965, 12.32,3));
-        main.addNodeValue(Kaliningrado, null, new NodeValue(null, null,null));
-        main.addNodeValue(Kaliningrado, null, new NodeValue(null, null,null));
-        main.addNodeValue(Kaliningrado, null, new NodeValue(null, null,null));
-        main.addNodeValue(São_Petersburgo, null, new NodeValue(null, null,null));
-        main.addNodeValue(São_Petersburgo, null, new NodeValue(null, null,null));
-        main.addNodeValue(São_Petersburgo, null, new NodeValue(null, null,null));
-        main.addNodeValue(São_Petersburgo, null, new NodeValue(null,null,null));
-        main.addNodeValue(Moscou, null, new NodeValue(null,null,null));
-        main.addNodeValue(Moscou, null, new NodeValue(null,null,null));
-        main.addNodeValue(Moscou, null, new NodeValue(null,null,null));
-        main.addNodeValue(Moscou, null, new NodeValue(null,null,null));
-        main.addNodeValue(Moscou, null, new NodeValue(null,null,null));
-        main.addNodeValue(Saransk, null, new NodeValue(null,null,null));
-        main.addNodeValue(Saransk, null, new NodeValue(null,null,null));
-        main.addNodeValue(Saransk, null, new NodeValue(null,null,null));
+         main.addNodeValue(Kaliningrado, Ecaterimburgo, new NodeValue(3046, 39.0,1));
+        main.addNodeValue(Kaliningrado, Rostov, new NodeValue(2319, 27.0,3));
+        main.addNodeValue(Kaliningrado,Sochi , new NodeValue(2709, 36.0,4));
+        main.addNodeValue(São_Petersburgo, Kaliningrado, new NodeValue(965, 12.32,3));
+        main.addNodeValue(São_Petersburgo, Moscou, new NodeValue(711, 9.11,2));
+        main.addNodeValue(São_Petersburgo, Kazan, new NodeValue(1527, 19.42,4));
+        main.addNodeValue(São_Petersburgo, Ecaterimburgo, new NodeValue(2227,30.0,0));
+        main.addNodeValue(Moscou, São_Petersburgo, new NodeValue(711,9.11,2));
+        main.addNodeValue(Moscou, Nijni_Novgorod, new NodeValue(417,6.17,0));
+        main.addNodeValue(Moscou, Ecaterimburgo, new NodeValue(1785,24.0,1));
+        main.addNodeValue(Moscou, Volgogrado, new NodeValue(969,11.40,1));
+        main.addNodeValue(Moscou, Rostov, new NodeValue(1076,12.30,3));
+        main.addNodeValue(Saransk, Nijni_Novgorod, new NodeValue(284,4.8,0));
+        main.addNodeValue(Saransk, Ecaterimburgo, new NodeValue(1340,17.41,0));
+        main.addNodeValue(Saransk, Volgogrado, new NodeValue(715,9.3,0));
         // Clovis
         main.addNodeValue(Nijni_Novgorod, null, new NodeValue(null,null,null));
         main.addNodeValue(Nijni_Novgorod, null, new NodeValue(null,null,null));
