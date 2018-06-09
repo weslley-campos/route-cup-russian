@@ -66,7 +66,7 @@ public class Main {
         main.addNodeValue(Saransk, Nijni_Novgorod, new NodeValue(284,4.8,0));
         main.addNodeValue(Saransk, Ecaterimburgo, new NodeValue(1340,17.41,0));
         main.addNodeValue(Saransk, Volgogrado, new NodeValue(715,9.3,0));
-        // Clovis
+        // Clóvis
         main.addNodeValue(Nijni_Novgorod, Moscou, new NodeValue(418,5.43,0));
         main.addNodeValue(Nijni_Novgorod, Saransk, new NodeValue(283,3.56,0));
         main.addNodeValue(Nijni_Novgorod, Kazan, new NodeValue(388,5.19,0));
