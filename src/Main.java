@@ -67,18 +67,18 @@ public class Main {
         main.addNodeValue(Saransk, Ecaterimburgo, new NodeValue(1340,17.41,0));
         main.addNodeValue(Saransk, Volgogrado, new NodeValue(715,9.3,0));
         // Clovis
-        main.addNodeValue(Nijni_Novgorod, null, new NodeValue(null,null,null));
-        main.addNodeValue(Nijni_Novgorod, null, new NodeValue(null,null,null));
-        main.addNodeValue(Nijni_Novgorod, null, new NodeValue(null,null,null));
-        main.addNodeValue(Nijni_Novgorod, null, new NodeValue(null,null,null));
-        main.addNodeValue(Kazan, null, new NodeValue(null,null,null));
-        main.addNodeValue(Kazan, null, new NodeValue(null,null,null));
-        main.addNodeValue(Kazan, null, new NodeValue(null,null,null));
-        main.addNodeValue(Ecaterimburgo, null, new NodeValue(null,null,null));
-        main.addNodeValue(Ecaterimburgo, null, new NodeValue(null,null,null));
-        main.addNodeValue(Ecaterimburgo, null, new NodeValue(null,null,null));
-        main.addNodeValue(Ecaterimburgo, null, new NodeValue(null,null,null));
-        main.addNodeValue(Ecaterimburgo, null, new NodeValue(null,null,null));
+        main.addNodeValue(Nijni_Novgorod, Moscou, new NodeValue(418,5.43,0));
+        main.addNodeValue(Nijni_Novgorod, Saransk, new NodeValue(283,3.56,0));
+        main.addNodeValue(Nijni_Novgorod, Kazan, new NodeValue(388,5.19,0));
+        main.addNodeValue(Nijni_Novgorod, Sochi, new NodeValue(1808,25,0));
+        main.addNodeValue(Kazan, SÃO PETERSBURGO, new NodeValue(1520,19.26,1));
+        main.addNodeValue(Kazan, Nijni_Novgorod, new NodeValue(389,5.17,0));
+        main.addNodeValue(Kazan, Samara, new NodeValue(359,5.11,0));
+        main.addNodeValue(Ecaterimburgo, Kaliningrado, new NodeValue(3026,40,0));
+		main.addNodeValue(Ecaterimburgo, Sao_Petersburgo, new NodeValue(2225,30,0));
+		vmain.addNodeValue(Ecaterimburgo, Saransk, new NodeValue(1315,17.38,0));
+        main.addNodeValue(Ecaterimburgo, Moscou, new NodeValue(1763,23.43,1));
+        main.addNodeValue(Ecaterimburgo, Samara, new NodeValue(972,12.38,0));
         // weslley
         main.addNodeValue(Samara, Kazan, new NodeValue(358,5.21,0));
         main.addNodeValue(Samara, Ecaterimburgo, new NodeValue(974,12.31,0));
