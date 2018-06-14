@@ -52,22 +52,22 @@ public class Main {
     public void init_matriz_values() {
         Main main = new Main();
         // Paulo vitor
-        main.addValue(Kaliningrado, Sao_Petersburgo, 0.0);
-        main.addValue(Kaliningrado, Ecaterimburgo, 0.0);
-        main.addValue(Kaliningrado, Rostov, 0.0);
-        main.addValue(Kaliningrado,Sochi , 0.0);
-        main.addValue(Sao_Petersburgo, Kaliningrado, 0.0);
-        main.addValue(Sao_Petersburgo, Moscou, 0.0);
-        main.addValue(Sao_Petersburgo, Kazan, 0.0);
-        main.addValue(Sao_Petersburgo, Ecaterimburgo, 0.0);
-        main.addValue(Moscou, Sao_Petersburgo, 0.0);
-        main.addValue(Moscou, Nijni_Novgorod, 0.0);
-        main.addValue(Moscou, Ecaterimburgo, 0.0);
-        main.addValue(Moscou, Volgogrado, 0.0);
-        main.addValue(Moscou, Rostov, 0.0);
-        main.addValue(Saransk, Nijni_Novgorod, 0.0); 
-        main.addValue(Saransk, Ecaterimburgo, 0.0);
-        main.addValue(Saransk, Volgogrado, 0.0);
+        main.addValue(Kaliningrado, Sao_Petersburgo, 2.222);
+        main.addValue(Kaliningrado, Ecaterimburgo, 2.713);
+        main.addValue(Kaliningrado, Rostov, 1.592);
+        main.addValue(Kaliningrado,Sochi , 1.270);
+        main.addValue(Sao_Petersburgo, Kaliningrado, 1.363);
+        main.addValue(Sao_Petersburgo, Moscou, 1.308);
+        main.addValue(Sao_Petersburgo, Kazan, 0.746);
+        main.addValue(Sao_Petersburgo, Ecaterimburgo, 0.839);
+        main.addValue(Moscou, Sao_Petersburgo, 0.150);
+        main.addValue(Moscou, Nijni_Novgorod, 1.440);
+        main.addValue(Moscou, Ecaterimburgo, 1.907);
+        main.addValue(Moscou, Volgogrado, 1.285);
+        main.addValue(Moscou, Rostov, 0.840);
+        main.addValue(Saransk, Nijni_Novgorod, 1.372); 
+        main.addValue(Saransk, Ecaterimburgo, 0.337);
+        main.addValue(Saransk, Volgogrado, 0.048);
         // Clóvis
         main.addValue(Nijni_Novgorod, Moscou, 0.0);
         main.addValue(Nijni_Novgorod, Saransk, 0.0);
