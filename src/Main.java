@@ -70,18 +70,18 @@ public class Main {
         main.addValue(Saransk, Ecaterimburgo, 0.337);
         main.addValue(Saransk, Volgogrado, 0.048);
         // Clóvis
-        main.addValue(Nijni_Novgorod, Moscou, 0.0);
-        main.addValue(Nijni_Novgorod, Saransk, 0.0);
-        main.addValue(Nijni_Novgorod, Kazan, 0.0);
-        main.addValue(Nijni_Novgorod, Sochi, 0.0);
-        main.addValue(Kazan, Sao_Petersburgo, 0.0);
-        main.addValue(Kazan, Nijni_Novgorod, 0.0);
-        main.addValue(Kazan, Samara, 0.0);
-        main.addValue(Ecaterimburgo, Kaliningrado, 0.0);
-		main.addValue(Ecaterimburgo, Sao_Petersburgo, 0.0);   
-		main.addValue(Ecaterimburgo, Saransk, 0.0);
-        main.addValue(Ecaterimburgo, Moscou, 0.0);
-        main.addValue(Ecaterimburgo, Samara,0.0); 
+        main.addValue(Nijni_Novgorod, Moscou, 0.124);
+        main.addValue(Nijni_Novgorod, Saransk, 0.045);
+        main.addValue(Nijni_Novgorod, Kazan, 0.120);
+        main.addValue(Nijni_Novgorod, Sochi, 1.158);
+        main.addValue(Kazan, Sao_Petersburgo, 1.144);
+        main.addValue(Kazan, Nijni_Novgorod, 0.120);
+        main.addValue(Kazan, Samara, 0.106);
+        main.addValue(Ecaterimburgo, Kaliningrado, 1.995);
+        main.addValue(Ecaterimburgo, Sao_Petersburgo, 1.441);
+        main.addValue(Ecaterimburgo, Saransk, 0.783);
+        main.addValue(Ecaterimburgo, Moscou, 1.357);
+        main.addValue(Ecaterimburgo, Samara,0.525);
         // weslley
         main.addValue(Samara, Kazan, 1.156);
         main.addValue(Samara, Ecaterimburgo, 0.523);
@@ -106,7 +106,7 @@ public class Main {
     public void mostrarMatrizAdjacente() {
         for (int i = 0; i < matriz_adjacente.length; i++) {
             for (int j = 0; j < matriz_adjacente.length; j++) {
-                System.out.print(matriz_adjacente[i][j]+" ");
+                System.out.print(matriz_adjacente[i][j]+" | ");
             }
             System.out.println("");
         }

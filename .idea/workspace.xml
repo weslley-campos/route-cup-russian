@@ -18,11 +18,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="399">
-              <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+            <state relative-caret-position="382">
+              <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
               <folding>
-                <element signature="e#1223#1224#0" expanded="true" />
-                <element signature="e#1273#1274#0" expanded="true" />
+                <element signature="e#1268#1269#0" expanded="true" />
+                <element signature="e#1316#1317#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -263,7 +263,7 @@
       <workItem from="1528405525021" duration="5219000" />
       <workItem from="1528602990645" duration="83000" />
       <workItem from="1528998138764" duration="2563000" />
-      <workItem from="1529016960476" duration="995000" />
+      <workItem from="1529016960476" duration="1932000" />
     </task>
     <task id="LOCAL-00001" summary="Atualização do nome da cidade de São Petersburgo,&#10;e inserção de valores.">
       <created>1528411293472</created>
@@ -279,11 +279,18 @@
       <option name="project" value="LOCAL" />
       <updated>1529002885926</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Dados Inseridos!!!">
+      <created>1529018484811</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1529018484812</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16175000" />
+    <option name="totallyTimeSpent" value="17112000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="51" y="24" width="1255" height="1056" extended-state="4" />
@@ -291,6 +298,7 @@
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
@@ -298,7 +306,7 @@
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.32946146" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
@@ -312,7 +320,6 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.3990964" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -358,7 +365,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Atualização do nome da cidade de São Petersburgo,&#10;e inserção de valores." />
     <MESSAGE value="Mudança na estrutura para comportar os dados normalizados" />
-    <option name="LAST_COMMIT_MESSAGE" value="Mudança na estrutura para comportar os dados normalizados" />
+    <MESSAGE value="Dados Inseridos!!!" />
+    <option name="LAST_COMMIT_MESSAGE" value="Dados Inseridos!!!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -371,8 +379,8 @@
         <state relative-caret-position="810">
           <caret line="54" column="55" selection-start-line="54" selection-start-column="55" selection-end-line="54" selection-end-column="55" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -395,8 +403,8 @@
         <state relative-caret-position="1095">
           <caret line="73" column="48" selection-start-line="73" selection-start-column="48" selection-end-line="73" selection-end-column="48" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -420,8 +428,8 @@
         <state relative-caret-position="1440">
           <caret line="96" column="68" lean-forward="true" selection-start-line="96" selection-start-column="68" selection-end-line="96" selection-end-column="68" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -445,8 +453,8 @@
         <state relative-caret-position="1080">
           <caret line="72" column="67" selection-start-line="72" selection-start-column="67" selection-end-line="72" selection-end-column="67" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -470,8 +478,8 @@
         <state relative-caret-position="750">
           <caret line="50" column="32" lean-forward="true" selection-start-line="50" selection-start-column="32" selection-end-line="50" selection-end-column="32" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -506,11 +514,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        <state relative-caret-position="382">
+          <caret line="72" column="53" selection-start-line="72" selection-start-column="53" selection-end-line="72" selection-end-column="53" />
           <folding>
-            <element signature="e#1223#1224#0" expanded="true" />
-            <element signature="e#1273#1274#0" expanded="true" />
+            <element signature="e#1268#1269#0" expanded="true" />
+            <element signature="e#1316#1317#0" expanded="true" />
           </folding>
         </state>
       </provider>
