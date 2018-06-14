@@ -16,9 +16,10 @@ public class Main {
     static double[][] matriz_adjacente = new double[11][11];
     static Cidade[] cidades = new Cidade[11];
 
-    public static void main(Double[] args) {
+    public static void main(String[] args) {
         new Main().init_listCidades();
         new Main().init_matriz_values();
+        new Main().mostrarMatrizAdjacente();
 
     }
 
@@ -38,7 +39,7 @@ public class Main {
     }
 
     public void addCidade(String cidade, int position){ 
-        cidades[position].cidade = cidade;
+        cidades[position] = new Cidade(cidade);
     }
 
 
@@ -82,23 +83,32 @@ public class Main {
         main.addValue(Ecaterimburgo, Moscou, 0.0);
         main.addValue(Ecaterimburgo, Samara,0.0); 
         // weslley
-        main.addValue(Samara, Kazan, 0.0);
-        main.addValue(Samara, Ecaterimburgo, 0.0);
-        main.addValue(Samara, Volgogrado, 0.0);
-        main.addValue(Samara, Sochi, 0.0);
-        main.addValue(Volgogrado, Moscou, 0.0);
-        main.addValue(Volgogrado, Saransk, 0.0);
-        main.addValue(Volgogrado, Samara, 0.0);
-        main.addValue(Volgogrado, Rostov, 0.0);
-        main.addValue(Volgogrado, Sochi, 0.0);
-        main.addValue(Rostov, Kaliningrado, 0.0);
-        main.addValue(Rostov, Moscou, 0.0);
-        main.addValue(Rostov, Volgogrado, 0.0);
-        main.addValue(Rostov, Sochi, 0.0);
-        main.addValue(Sochi, Kaliningrado, 0.0);
-        main.addValue(Sochi, Rostov, 0.0);
-        main.addValue(Sochi, Volgogrado, 0.0);
-        main.addValue(Sochi, Samara, 0.0);
-        main.addValue(Sochi, Nijni_Novgorod, 0.0);
+        main.addValue(Samara, Kazan, 1.156);
+        main.addValue(Samara, Ecaterimburgo, 0.523);
+        main.addValue(Samara, Volgogrado, 0.443);
+        main.addValue(Samara, Sochi, 0.111);
+        main.addValue(Volgogrado, Moscou, 0.744);
+        main.addValue(Volgogrado, Saransk, 0.329);
+        main.addValue(Volgogrado, Samara, 0.423);
+        main.addValue(Volgogrado, Rostov, 0.167);
+        main.addValue(Volgogrado, Sochi, 0.559);
+        main.addValue(Rostov, Kaliningrado, 2.063);
+        main.addValue(Rostov, Moscou, 1.317);
+        main.addValue(Rostov, Volgogrado, 0.180);
+        main.addValue(Rostov, Sochi, 0.280);
+        main.addValue(Sochi, Kaliningrado, 1.924);
+        main.addValue(Sochi, Rostov, 0.239);
+        main.addValue(Sochi, Volgogrado, 0.550);
+        main.addValue(Sochi, Samara, 1.154);
+        main.addValue(Sochi, Nijni_Novgorod, 1.174);
+    }
+
+    public void mostrarMatrizAdjacente() {
+        for (int i = 0; i < matriz_adjacente.length; i++) {
+            for (int j = 0; j < matriz_adjacente.length; j++) {
+                System.out.print(matriz_adjacente[i][j]+" ");
+            }
+            System.out.println("");
+        }
     }
 }
