@@ -1,3 +1,4 @@
+
 public class Main {
 
     static final int Kaliningrado = 0;
@@ -12,13 +13,12 @@ public class Main {
     static final int Rostov = 9;
     static final int Sochi  = 10;
 
-    static Cidade[] listCidades = new Cidade[11];
-    static NodeValue[][] nodeValues;
+    static double[][] matriz_adjacente = new double[11][11];
+    static Cidade[] cidades = new Cidade[11];
 
-    public static void main(String[] args) {
-        Main main = new Main();
-
-        main.init_listCidades();
+    public static void main(Double[] args) {
+        new Main().init_listCidades();
+        new Main().init_matriz_values();
 
     }
 
@@ -37,66 +37,68 @@ public class Main {
         main.addCidade("Sochi",10);
     }
 
-    public void addCidade(String city, int position){
-        listCidades[position] = new Cidade(city);
+    public void addCidade(String cidade, int position){ 
+        cidades[position].cidade = cidade;
     }
 
-    public void addNodeValue(int inicio, int fim, NodeValue nodeValue){
-        nodeValues[inicio][fim] = nodeValue;
-        nodeValues[fim][inicio] = nodeValue;
-    }
 
-    public void init_matriz_nodevalues() {
+    public void addValue(int cidade1, int cidade2, double valor) {
+        matriz_adjacente[cidade1][cidade2] =  valor;
+        matriz_adjacente[cidade2][cidade1] =  valor;
+
+    }
+    
+
+    public void init_matriz_values() {
         Main main = new Main();
-        // exemplo para inserção
         // Paulo vitor
-        main.addNodeValue(Kaliningrado, Sao_Petersburgo, new NodeValue(965, 12.32,3));
-        main.addNodeValue(Kaliningrado, Ecaterimburgo, new NodeValue(3046, 39.0,1));
-        main.addNodeValue(Kaliningrado, Rostov, new NodeValue(2319, 27.0,3));
-        main.addNodeValue(Kaliningrado,Sochi , new NodeValue(2709, 36.0,4));
-        main.addNodeValue(Sao_Petersburgo, Kaliningrado, new NodeValue(965, 12.32,3));
-        main.addNodeValue(Sao_Petersburgo, Moscou, new NodeValue(711, 9.11,2));
-        main.addNodeValue(Sao_Petersburgo, Kazan, new NodeValue(1527, 19.42,4));
-        main.addNodeValue(Sao_Petersburgo, Ecaterimburgo, new NodeValue(2227,30.0,0));
-        main.addNodeValue(Moscou, Sao_Petersburgo, new NodeValue(711,9.11,2));
-        main.addNodeValue(Moscou, Nijni_Novgorod, new NodeValue(417,6.17,0));
-        main.addNodeValue(Moscou, Ecaterimburgo, new NodeValue(1785,24.0,1));
-        main.addNodeValue(Moscou, Volgogrado, new NodeValue(969,11.40,1));
-        main.addNodeValue(Moscou, Rostov, new NodeValue(1076,12.30,3));
-        main.addNodeValue(Saransk, Nijni_Novgorod, new NodeValue(284,4.8,0));
-        main.addNodeValue(Saransk, Ecaterimburgo, new NodeValue(1340,17.41,0));
-        main.addNodeValue(Saransk, Volgogrado, new NodeValue(715,9.3,0));
+        main.addValue(Kaliningrado, Sao_Petersburgo, 0.0);
+        main.addValue(Kaliningrado, Ecaterimburgo, 0.0);
+        main.addValue(Kaliningrado, Rostov, 0.0);
+        main.addValue(Kaliningrado,Sochi , 0.0);
+        main.addValue(Sao_Petersburgo, Kaliningrado, 0.0);
+        main.addValue(Sao_Petersburgo, Moscou, 0.0);
+        main.addValue(Sao_Petersburgo, Kazan, 0.0);
+        main.addValue(Sao_Petersburgo, Ecaterimburgo, 0.0);
+        main.addValue(Moscou, Sao_Petersburgo, 0.0);
+        main.addValue(Moscou, Nijni_Novgorod, 0.0);
+        main.addValue(Moscou, Ecaterimburgo, 0.0);
+        main.addValue(Moscou, Volgogrado, 0.0);
+        main.addValue(Moscou, Rostov, 0.0);
+        main.addValue(Saransk, Nijni_Novgorod, 0.0); 
+        main.addValue(Saransk, Ecaterimburgo, 0.0);
+        main.addValue(Saransk, Volgogrado, 0.0);
         // Clóvis
-        main.addNodeValue(Nijni_Novgorod, Moscou, new NodeValue(418,5.43,0));
-        main.addNodeValue(Nijni_Novgorod, Saransk, new NodeValue(283,3.56,0));
-        main.addNodeValue(Nijni_Novgorod, Kazan, new NodeValue(388,5.19,0));
-        main.addNodeValue(Nijni_Novgorod, Sochi, new NodeValue(1808,25,0));
-        main.addNodeValue(Kazan, SÃO PETERSBURGO, new NodeValue(1520,19.26,1));
-        main.addNodeValue(Kazan, Nijni_Novgorod, new NodeValue(389,5.17,0));
-        main.addNodeValue(Kazan, Samara, new NodeValue(359,5.11,0));
-        main.addNodeValue(Ecaterimburgo, Kaliningrado, new NodeValue(3026,40,0));
-		main.addNodeValue(Ecaterimburgo, Sao_Petersburgo, new NodeValue(2225,30,0));
-		vmain.addNodeValue(Ecaterimburgo, Saransk, new NodeValue(1315,17.38,0));
-        main.addNodeValue(Ecaterimburgo, Moscou, new NodeValue(1763,23.43,1));
-        main.addNodeValue(Ecaterimburgo, Samara, new NodeValue(972,12.38,0));
+        main.addValue(Nijni_Novgorod, Moscou, 0.0);
+        main.addValue(Nijni_Novgorod, Saransk, 0.0);
+        main.addValue(Nijni_Novgorod, Kazan, 0.0);
+        main.addValue(Nijni_Novgorod, Sochi, 0.0);
+        main.addValue(Kazan, Sao_Petersburgo, 0.0);
+        main.addValue(Kazan, Nijni_Novgorod, 0.0);
+        main.addValue(Kazan, Samara, 0.0);
+        main.addValue(Ecaterimburgo, Kaliningrado, 0.0);
+		main.addValue(Ecaterimburgo, Sao_Petersburgo, 0.0);   
+		main.addValue(Ecaterimburgo, Saransk, 0.0);
+        main.addValue(Ecaterimburgo, Moscou, 0.0);
+        main.addValue(Ecaterimburgo, Samara,0.0); 
         // weslley
-        main.addNodeValue(Samara, Kazan, new NodeValue(358,5.21,0));
-        main.addNodeValue(Samara, Ecaterimburgo, new NodeValue(974,12.31,0));
-        main.addNodeValue(Samara, Volgogrado, new NodeValue(798,11.57,0));
-        main.addNodeValue(Samara, Sochi, new NodeValue(1802,25,0));
-        main.addNodeValue(Volgogrado, Moscou, new NodeValue(969,11.32,1));
-        main.addNodeValue(Volgogrado, Saransk, new NodeValue(715,8.4,0));
-        main.addNodeValue(Volgogrado, Samara, new NodeValue(817,10.53,0));
-        main.addNodeValue(Volgogrado, Rostov, new NodeValue(472,5.58,0));
-        main.addNodeValue(Volgogrado, Sochi, new NodeValue(985,13.41,0));
-        main.addNodeValue(Rostov, Kaliningrado, new NodeValue(2097,27,3));
-        main.addNodeValue(Rostov, Moscou, new NodeValue(1078,12.49,3));
-        main.addNodeValue(Rostov, Volgogrado, new NodeValue(472,6.25,0));
-        main.addNodeValue(Rostov, Sochi, new NodeValue(564,8.54,0));
-        main.addNodeValue(Sochi, Kaliningrado, new NodeValue(2540,36,4));
-        main.addNodeValue(Sochi, Rostov, new NodeValue(554,7.32,0));
-        main.addNodeValue(Sochi, Volgogrado, new NodeValue(981,13.24,0));
-        main.addNodeValue(Sochi, Samara, new NodeValue(1798,25,0));
-        main.addNodeValue(Sochi, Nijni_Novgorod, new NodeValue(18855,25,0));
+        main.addValue(Samara, Kazan, 0.0);
+        main.addValue(Samara, Ecaterimburgo, 0.0);
+        main.addValue(Samara, Volgogrado, 0.0);
+        main.addValue(Samara, Sochi, 0.0);
+        main.addValue(Volgogrado, Moscou, 0.0);
+        main.addValue(Volgogrado, Saransk, 0.0);
+        main.addValue(Volgogrado, Samara, 0.0);
+        main.addValue(Volgogrado, Rostov, 0.0);
+        main.addValue(Volgogrado, Sochi, 0.0);
+        main.addValue(Rostov, Kaliningrado, 0.0);
+        main.addValue(Rostov, Moscou, 0.0);
+        main.addValue(Rostov, Volgogrado, 0.0);
+        main.addValue(Rostov, Sochi, 0.0);
+        main.addValue(Sochi, Kaliningrado, 0.0);
+        main.addValue(Sochi, Rostov, 0.0);
+        main.addValue(Sochi, Volgogrado, 0.0);
+        main.addValue(Sochi, Samara, 0.0);
+        main.addValue(Sochi, Nijni_Novgorod, 0.0);
     }
 }
