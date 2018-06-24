@@ -12,8 +12,8 @@ public class Main extends Cidade implements Comparable<Cidade> {
     }
 
     public static void main(String[] args) {
-//        int origem = 0, destino = 6;   // Teste de Kalinigrado -> Ecaterimburgo
-        int origem = 10, destino = 1;    // Teste de Sochi       -> SÃ£o Petersburgo
+        int origem = 6, destino = 5;// Teste de Kalinigrado -> Ecaterimburgo
+        //int origem = 10, destino = 1;// Teste de Sochi   -> São Petersburgo
         new Data(cidades, matriz_adjacente);
         Cidade city = new Main().uniformCustSearch(origem, destino);
 
