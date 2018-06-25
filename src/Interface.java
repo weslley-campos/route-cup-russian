@@ -3,21 +3,20 @@ import java.awt.*;
 
 public class Interface extends JFrame {
 
-    private static JButton btnIniciar = new JButton("Iniciar");
-    private static JComboBox<String> comboOrigem = new JComboBox<>();
-    private static JComboBox<String> comboDestino = new JComboBox<>();
-
-    private static JLabel ecaterimburgo = new JLabel("ecaterimburgo;");
-    private static JLabel sao_petersburgo = new JLabel("sao_petersburgo;");
-    private static JLabel rostov = new JLabel("rostov;");
-    private static JLabel samara = new JLabel("samara;");
-    private static JLabel volgogrado = new JLabel("volgogrado;");
-    private static JLabel sochi = new JLabel("sochi;");
-    private static JLabel kazan = new JLabel("kazan;");
-    private static JLabel saransk = new JLabel("saransk;");
-    private static JLabel kalingrado = new JLabel("kalingrado;");
-    private static JLabel moscou = new JLabel("moscou;");
-    private static JLabel nijni_novgorod = new JLabel("nijni_novgorod;");
+    protected static JButton btnIniciar = new JButton("Iniciar");
+    protected static JComboBox<String> comboOrigem = new JComboBox<>();
+    protected static JComboBox<String> comboDestino = new JComboBox<>();
+    protected static JLabel ecaterimburgo = new JLabel("ecaterimburgo;");
+    protected static JLabel sao_petersburgo = new JLabel("sao_petersburgo;");
+    protected static JLabel rostov = new JLabel("rostov;");
+    protected static JLabel samara = new JLabel("samara;");
+    protected static JLabel volgogrado = new JLabel("volgogrado;");
+    protected static JLabel sochi = new JLabel("sochi;");
+    protected static JLabel kazan = new JLabel("kazan;");
+    protected static JLabel saransk = new JLabel("saransk;");
+    protected static JLabel kalingrado = new JLabel("kalingrado;");
+    protected static JLabel moscou = new JLabel("moscou;");
+    protected static JLabel nijni_novgorod = new JLabel("nijni_novgorod;");
 
     public Interface() {
         setTitle("World Cup Russia 2018");
@@ -85,29 +84,29 @@ public class Interface extends JFrame {
         btnIniciar.setBounds(846, 465, 124, 30);
         getContentPane().add(btnIniciar);
 
-        comboOrigem.addItem("Ecterimburgo");
+        comboOrigem.addItem("Kaliningrado");
         comboOrigem.addItem("Sao Petersburgo");
-        comboOrigem.addItem("Rostov");
+        comboOrigem.addItem("Moscou");
+        comboOrigem.addItem("Saransk");
+        comboOrigem.addItem("Nijni Novgorod");
+        comboOrigem.addItem("Kazan");
+        comboOrigem.addItem("Ecaterimburgo");
         comboOrigem.addItem("Samara");
         comboOrigem.addItem("Volgogrado");
+        comboOrigem.addItem("Rostov");
         comboOrigem.addItem("Sochi");
-        comboOrigem.addItem("Kazan");
-        comboOrigem.addItem("Saransk");
-        comboOrigem.addItem("Kalingrado");
-        comboOrigem.addItem("Moscou");
-        comboOrigem.addItem("Nijni_novgorod");
 
-        comboDestino.addItem("Ecterimburgo");
+        comboDestino.addItem("Kaliningrado");
         comboDestino.addItem("Sao Petersburgo");
-        comboDestino.addItem("Rostov");
+        comboDestino.addItem("Moscou");
+        comboDestino.addItem("Saransk");
+        comboDestino.addItem("Nijni Novgorod");
+        comboDestino.addItem("Kazan");
+        comboDestino.addItem("Ecaterimburgo");
         comboDestino.addItem("Samara");
         comboDestino.addItem("Volgogrado");
+        comboDestino.addItem("Rostov");
         comboDestino.addItem("Sochi");
-        comboDestino.addItem("Kazan");
-        comboDestino.addItem("Saransk");
-        comboDestino.addItem("Kalingrado");
-        comboDestino.addItem("Moscou");
-        comboDestino.addItem("Nijni_novgorod");
 
         getContentPane().setLayout(null);
 
@@ -118,8 +117,8 @@ public class Interface extends JFrame {
 
         setVisible(true);
     }
-    
-    public void clearPath(){
+
+    public void clearPath() {
         ecaterimburgo.setIcon(new ImageIcon(getClass().getResource("/imagens/point-red.png")));
         sao_petersburgo.setIcon(new ImageIcon(getClass().getResource("/imagens/point-red.png")));
         rostov.setIcon(new ImageIcon(getClass().getResource("/imagens/point-red.png")));
@@ -134,21 +133,61 @@ public class Interface extends JFrame {
     }
 
     public void showPath(Cidade caminho) {
+        while (true) {
+            switch (caminho.getPosition()) {
+            case 0:
+                kalingrado.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 1:
+                sao_petersburgo.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 2:
+                moscou.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 3:
+                saransk.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 4:
+                nijni_novgorod.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 5:
+                kazan.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 6:
+                ecaterimburgo.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 7:
+                samara.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 8:
+                volgogrado.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 9:
+                rostov.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            case 10:
+                sochi.setIcon(new ImageIcon(Interface.class.getResource("/imagens/point-green.png")));
+                break;
+            }
+            if (caminho.getPai() == null)
+                break;
+            caminho = caminho.getPai();
+        }
 
     }
 
     public static void main(String[] args) {
 
+        // Inicializando interface
         Interface tela = new Interface();
 
         btnIniciar.addActionListener(e -> {
-            int origem = comboOrigem.getSelectedIndex();
-            int destino = comboDestino.getSelectedIndex();
-            tela.showPath(new UniformCustSearch().uniformCustSearch(origem, destino));
+            tela.clearPath();
+            tela.showPath(new UniformCustSearch()
+                .uniformCustSearch(
+                    comboOrigem.getSelectedIndex(),
+                    comboDestino.getSelectedIndex())); 
         });
     }
 
-
-
-       
 }

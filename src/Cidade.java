@@ -3,7 +3,6 @@ public class Cidade implements Comparable<Cidade>{
     private Cidade pai;
     private String cidade;
     private boolean wasVisited;
-    private boolean isInicial;
     private boolean isFinal;
     private double custNode;
     private int position;
@@ -12,14 +11,12 @@ public class Cidade implements Comparable<Cidade>{
         this.pai = null;
         this.cidade = cidade;
         this.wasVisited = false;
-        this.isInicial = false;
         this.isFinal = false;
         this.custNode = 0.0;
         this.position = position;
     }
 
-    public Cidade() {
-    }
+    public Cidade(){}
 
     /**
      * @return the pai
@@ -55,21 +52,7 @@ public class Cidade implements Comparable<Cidade>{
     public boolean wasVisited() {
         return wasVisited;
     }
-
-    /**
-     * @param isInicial the isInicial to set
-     */
-    public void setIsInicial(boolean isInicial) {
-        this.isInicial = isInicial;
-    }
-
-    /**
-     * @return the isInicial
-     */
-    public boolean isInicial() {
-        return isInicial;
-    }
-
+    
     /**
      * @param isFinal the isFinal to set
      */

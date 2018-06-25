@@ -3,10 +3,14 @@ import java.util.PriorityQueue;
 /**
  * UniformCustSearch
  */
-public class UniformCustSearch {
+public class UniformCustSearch extends Cidade implements Comparable<Cidade>{
 
     protected static double[][] matriz_adjacente = new double[11][11];
     protected static Cidade[] cidades = new Cidade[11];
+
+    public UniformCustSearch() {
+        new Data(cidades, matriz_adjacente);
+    }
 
     public Cidade uniformCustSearch(int origem, int destino) {
 
@@ -17,17 +21,17 @@ public class UniformCustSearch {
 
         while (!fila.isEmpty()) {
 
-            Cidade cidadeAtual = fila.remove();
+            Cidade cidadePai = fila.remove();
 
-            if (cidadeAtual.isFinal() == cidades[destino].isFinal())
-                return cidadeAtual;
+            if (cidadePai.isFinal() == cidades[destino].isFinal())
+                return cidadePai;
 
-            for (int i = 0; i < matriz_adjacente.length; i++) {
-                if ((matriz_adjacente[cidadeAtual.getPosition()][i] != 0) && (cidades[i].wasVisited() == false)) {
-                    cidades[i].setCustNode(cidadeAtual.getCustNode()+ matriz_adjacente[cidadeAtual.getPosition()][i]);
-                    cidades[i].setPai(cidades[cidadeAtual.getPosition()]);
-                    cidades[i].setWasVisited(true);
-                    fila.add(cidades[i]);
+            for (int cidadeAtual = 0; cidadeAtual < matriz_adjacente.length; cidadeAtual++) {
+                if ((matriz_adjacente[cidadePai.getPosition()][cidadeAtual] != 0) && (cidades[cidadeAtual].wasVisited() == false)) {
+                    cidades[cidadeAtual].setCustNode(cidadePai.getCustNode() + matriz_adjacente[cidadePai.getPosition()][cidadeAtual]);
+                    cidades[cidadeAtual].setPai(cidades[cidadePai.getPosition()]);
+                    cidades[cidadeAtual].setWasVisited(true);
+                    fila.add(cidades[cidadeAtual]);
                 }
             }
         }
